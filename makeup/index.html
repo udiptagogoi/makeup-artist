@@ -516,32 +516,25 @@
 			<div class="element-wrapper">
 				<p>Please fill the form to get in touch. I will answer as fast as possible.</p>
 				<!-- form -->
-				<form id="contactForm" name="contact" method="POST" data-netlify="true">
-					<!-- item -->            
-					<div class="form-group">
-					  <input type="text" class="form-control required" id="name" name="name" placeholder="Name*" required="">
-					</div>    
-					<!-- /item -->
-					<!-- item -->        
-					<div class="form-group">
-					  <input type="email" class="form-control required" id="email" name="email" placeholder="Email" required="">
-					</div>    
-					<!-- /item --> 
-					<!-- item -->            
-					<div class="form-group">
-					  <input type="text" class="form-control required" id="subject" name="subject" placeholder="Subject" required="">
-					</div>    
-					<!-- /item -->
-					<!-- item -->            
-					<div class="form-group">
-					  <textarea class="form-control required" name="message" id="message" placeholder="Message" required=""></textarea>
-					</div>    
-					<!-- /item --> 
-					<!-- item -->            
-					<div class="form-group form-send">
-					  <button type="submit" value="enviar" class="btn btn-default btn-rayen" data-text="Let's Go!"><span>Submit</span></button>
-					</div>    
-					<!-- /item -->                
+				<form name="contact" method="POST" data-netlify="true">
+				  <p>
+				    <label>Your Name: <input type="text" name="name" /></label>   
+				  </p>
+				  <p>
+				    <label>Your Email: <input type="email" name="email" /></label>
+				  </p>
+				  <p>
+				    <label>Your Role: <select name="role[]" multiple>
+				      <option value="leader">Leader</option>
+				      <option value="follower">Follower</option>
+				    </select></label>
+				  </p>
+				  <p>
+				    <label>Message: <textarea name="message"></textarea></label>
+				  </p>
+				  <p>
+				    <button type="submit">Send</button>
+				  </p>
 				</form>
 				<!-- /form -->
 			</div>
